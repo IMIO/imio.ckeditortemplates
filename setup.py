@@ -36,6 +36,7 @@ setup(
         'Plone',
         'setuptools',
         'collective.ckeditortemplates',
+        'plone.api',
     ],
     extras_require={
         'test': [

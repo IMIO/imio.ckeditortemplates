@@ -15,11 +15,5 @@
       description="imio.ckeditortemplates desc"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <genericsetup:importStep
-      name="imio.ckeditortemplates.tests_content"
-      title="imio.ckeditortemplates test"
-      description="Various import steps that are not handled by GS import/export handlers."
-      handler=".setuphandlers.testSetup">
-  </genericsetup:importStep>
 
 </configure>

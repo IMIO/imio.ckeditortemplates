@@ -26,6 +26,14 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:importStep
+        name="imio.ckeditortemplates.setupt"
+        title="imio.ckeditortemplates: setup"
+        description="Various import steps that are not handled by GS import/export handlers."
+        handler=".setuphandlers.setupTemplates">
+    </genericsetup:importStep>
+
+
     <i18n:registerTranslations directory="locales" />
 
 </configure>
