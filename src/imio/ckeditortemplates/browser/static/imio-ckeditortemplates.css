@@ -1,0 +1,135 @@
+.bloc-content{
+  float:left;
+  width:30%;
+  padding-right: 4em;
+}
+
+.bloc-main{
+  background-color:#f2f2f2;
+  width:97%;
+  padding:1%;
+  margin-bottom:1%;
+  border: 1px solid #D3D3D3;
+}
+
+.bloc-main h2,.bloc-main h3{
+  font-weight: normal !important;
+  margin: 0;
+  padding-top: 0.4em;
+  line-height: 100%;
+
+}
+
+.bloc-main h2{
+  padding-bottom:0.4em;
+}
+
+.fonction{
+  font-size: 110%;
+  font-variant: small-caps;
+}
+.image-left-border {
+  border: 1px solid #F2F2F2;
+  border-radius:5px;
+  clear: both;
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+.image-right-border {
+  border: 1px solid #F2F2F2;
+  border-radius:5px;
+  clear: both;
+  float: right;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+
+.coordonnees{
+  float:left;
+  width:48%;
+}
+
+.horaire{
+  float:left;
+  width:48%;
+}
+
+.clear{
+  clear:both;
+  height:0px;
+}
+
+.infos-service {
+  background-color: #F2F2F2;
+  border: 1px solid #D3D3D3;
+  margin-bottom: 1%;
+  padding: 1%;
+  width: 99%;
+}
+
+.info{
+  margin:0.1em;
+  padding-left: 2.4em;
+}
+
+.horloge{
+  background:url("++resource++imio.ckeditortemplates/horloge.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.adresse{
+  background:url("++resource++imio.ckeditortemplates/adresse.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.homme{
+  background:url("++resource++imio.ckeditortemplates/homme.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.femme{
+  background:url("++resource++imio.ckeditortemplates/femme.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.telephone{
+  background:url("++resource++imio.ckeditortemplates/telephone.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.fax{
+  background:url("++resource++imio.ckeditortemplates/fax.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.mail{
+  background:url("++resource++imio.ckeditortemplates/courriel.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.lien{
+  background:url("++resource++imio.ckeditortemplates/lien.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
+
+.pdf{
+  background:url("++resource++imio.ckeditortemplates/fichier.png") no-repeat ;
+  height: 49px;
+  margin: 0.1em;
+  padding: 0 0 1.4em 4.4em;
+}
+
+.gsm{
+  background:url("++resource++imio.ckeditortemplates/gsm.png") no-repeat ;
+  margin:0.1em;
+  padding: 0 0 0.8em 2.4em;
+}
