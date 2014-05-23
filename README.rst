@@ -23,7 +23,9 @@ Dev
 
 Clone this repo, go into the package (cd imio.ckeditortemplates) and launch :
 
+
     make buildout
+    
     bin/instance fg
 
 Production
