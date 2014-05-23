@@ -1,3 +1,4 @@
+<tal:block tal:define='portal_url context/portal_url'>
 .bloc-content{
   float:left;
   width:30%;
@@ -74,62 +75,63 @@
 }
 
 .horloge{
-  background:url("++resource++imio.ckeditortemplates/horloge.png") no-repeat ;
+background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/horloge.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .adresse{
-  background:url("++resource++imio.ckeditortemplates/adresse.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/adresse.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .homme{
-  background:url("++resource++imio.ckeditortemplates/homme.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/homme.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .femme{
-  background:url("++resource++imio.ckeditortemplates/femme.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/femme.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .telephone{
-  background:url("++resource++imio.ckeditortemplates/telephone.png") no-repeat ;
+  background:url("resolveuid/3592b8b7a4f44b8c9d9c04595a0tel/image_preview") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .fax{
-  background:url("++resource++imio.ckeditortemplates/fax.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/fax.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .mail{
-  background:url("++resource++imio.ckeditortemplates/courriel.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/courriel.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .lien{
-  background:url("++resource++imio.ckeditortemplates/lien.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/lien.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
 
 .pdf{
-  background:url("++resource++imio.ckeditortemplates/fichier.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/fichier.png") no-repeat ;
   height: 49px;
   margin: 0.1em;
   padding: 0 0 1.4em 4.4em;
 }
 
 .gsm{
-  background:url("++resource++imio.ckeditortemplates/gsm.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/gsm.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
+</tal:block>

@@ -2,6 +2,6 @@
 <object name="portal_css" meta_type="Stylesheets Registry">
 
  <stylesheet title="" cacheable="True" compression="safe" cookable="True"
-     enabled="1" expression="" id="++resource++imio.ckeditortemplates/imio-ckeditortemplates.css" media="screen"
+     enabled="1" expression="" id="imio-ckeditortemplates.css" media="screen"
     rel="stylesheet" rendering="import"/>
 </object>
