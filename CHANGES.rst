@@ -4,7 +4,8 @@ Changelog
 0.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- add forgot default/imio.ckeditortemplates.txt file.
+  [bsuttor]
 
 
 0.1 (2014-05-23)
