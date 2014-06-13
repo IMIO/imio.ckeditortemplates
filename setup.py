@@ -34,6 +34,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
+        'collective.ckeditor',
         'collective.ckeditortemplates',
         'plone.api',
     ],
