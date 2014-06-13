@@ -4,13 +4,18 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add ckeditor propertiestool.
+  [bsuttor]
+
+- Add integration test.
+  [bsuttor]
+
 
 
 0.1.1 (2014-05-23)
 ------------------
 
-- add forgot default/imio.ckeditortemplates.txt file.
+- Add forgot default/imio.ckeditortemplates.txt file.
   [bsuttor]
 
 
