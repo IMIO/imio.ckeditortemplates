@@ -2,6 +2,24 @@
 <object name="portal_properties" meta_type="Plone Properties Tool">
  <object name="ckeditor_properties" meta_type="Plone Property Sheet">
   <!-- base properties -->
+  <property name="toolbar" type="string">Custom</property>
+  <property name="toolbar_Custom" type="text">
+[
+    ['Source','-','AjaxSave','Preview','-','Templates'],
+    ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
+    ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+    '/',
+    ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+    ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+    ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+    ['Link','Unlink','Anchor'],
+    ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+    '/',
+    ['Styles','Format'],
+    ['Maximize', 'ShowBlocks','-','About']
+]
+
+  </property>
   <property name="filtering" type="string">disabled</property>
   <property name="menuStyles" type="text">
 [

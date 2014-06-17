@@ -30,8 +30,14 @@ class TestIntegration(unittest.TestCase):
     def test_template_are_avaiable(self):
         pass
 
-    def test_ckeditor_config(self):
+    def test_ckeditor_filtering(self):
         ptools = getToolByName(self.portal, 'portal_properties')
         cktools = ptools['ckeditor_properties']
         self.assertTrue(cktools.filtering == "disabled")
         self.assertTrue("{ name : ' Mail', element : 'p', attributes : { 'class' : 'mail' } },\n" in cktools.menuStyles)
+
+    def test_ckeditor_toolbar(self):
+        ptools = getToolByName(self.portal, 'portal_properties')
+        cktools = ptools['ckeditor_properties']
+        self.assertTrue(cktools.toolbar == "Custom")
+        self.assertTrue("'Templates'" in cktools.toolbar_Custom)
