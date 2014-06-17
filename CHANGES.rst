@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.3 (unreleased)
+0.1.3 (2014-06-17)
 ------------------
 
 - Add ckeditor toolbar Custom on install.
