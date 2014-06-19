@@ -18,7 +18,7 @@ def setupTemplates(context):
     cktfolder = getattr(site, FOLDER)
     try:
         api.content.transition(obj=cktfolder,
-                               transition='published_and_hidden')
+                               transition='publish_and_hide')
     except api.exc.InvalidParameterError:
         if api.content.get_state(obj=cktfolder) == 'private':
             api.content.transition(obj=cktfolder, transition='publish')
