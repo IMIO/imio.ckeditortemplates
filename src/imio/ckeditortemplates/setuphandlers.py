@@ -3,7 +3,8 @@ from collective.ckeditortemplates.setuphandlers import FOLDER
 from plone import api
 from plone.app.textfield.value import RichTextValue
 from plone.uuid.interfaces import ATTRIBUTE_NAME
-
+import logging
+logger = logging.getLogger("imio.ckeditortemplates setup")
 
 IMAGES_FOLDER = 'images'
 
@@ -20,8 +21,8 @@ def setupTemplates(context):
         api.content.transition(obj=cktfolder,
                                transition='publish_and_hide')
     except api.exc.InvalidParameterError:
-        if api.content.get_state(obj=cktfolder) == 'private':
-            api.content.transition(obj=cktfolder, transition='publish')
+        logger.info("No publish_and_hide workflow")
+
     if not cktfolder.get(IMAGES_FOLDER):
         folder_images = api.content.create(
             type='Folder',
