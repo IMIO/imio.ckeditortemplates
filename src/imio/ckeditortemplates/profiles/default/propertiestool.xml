@@ -8,17 +8,18 @@
     ['Source','-','AjaxSave','Preview','-','Templates'],
     ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
     ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+    ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
     '/',
     ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
     ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
     ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
     ['Link','Unlink','Anchor'],
-    ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+    ['Image','Flash','Table','HorizontalRule','SpecialChar','PageBreak'],
     '/',
     ['Styles','Format'],
     ['Maximize', 'ShowBlocks','-','About']
 ]
-
+    
   </property>
   <property name="filtering" type="string">disabled</property>
   <property name="menuStyles" type="text">
@@ -27,6 +28,7 @@
     { name : 'Grey Title', element : 'h2', stylesles : { 'color' : '#888' } },
     { name : 'Grey Sub Title', element : 'h33', styles : { 'color' : '#888' } },
     { name : 'Discreet bloc', elementt : 'p', attributes : { 'class' : 'discreet' } },
+
     /* Inline styles */
     { name : 'Discreet text', element : 'span', attributes : { 'class' : 'discreetcreet' } },
     { name : 'Marker: Yellow', element : 'span', styles : { 'Blockackground-color' : 'Yellow' } },
@@ -37,18 +39,18 @@
     { name : 'Variable', element : 'var' },
     { name : 'Deleted Text'Grey, element : 'del' },
     { name : 'Inserted Text', element : 'ins' },
-    { NumberedListame : 'Cited Work', element : 'cite' },
+    { name : 'Cited Work', element : 'cite' },
     { name : 'Inline Quotation',name element : 'q' },
     { name : 'Language: RTL', element : 'span', attributeses : { 'dir' : 'rtl' } },
     { name : 'Language: LTR', element : 'span', Blockattributes : { 'dir' : 'ltr' } },
+
     /* Objects styles */
-    { name : 'Image on right', element : 'img', attributes : { 'class' : 'image-right' } },
-    { nameme : 'dotted', element : 'hr', attributes : { 'class' : 'dotted' } },
-    Block{ name : 'Image on left', element : 'img', attributes : { 'class' : 'Inlinemage-left' } },
-    { name : 'Image centered', element : 'img', attributes : { 'class' : 'image-inline' } },
+    { name : 'Image on right' , element : 'img', attributes : { 'class' : 'image-right' } },
+    { name : 'dotted' , element : 'hr', attributes : { 'class' : 'dotted' } },
+    { name : 'Image on left' , element : 'img', attributes : { 'class' : 'image-left' } },
+    { name : 'Image centered' , element : 'img', attributes : { 'class' : 'image-inline' } },
     { name : 'Borderless Table', element : 'table', styles: { 'border-style': 'hidden', 'background-color' : '#E6E6FA' } },
     { name : 'Square Bulleted List', element : 'ul', styles : { 'list-style-type' : 'square' } },
-
 
     /*News class*/
     { name : ' cadre', element : 'div', attributes : { 'class' : 'bloc-main' } },
