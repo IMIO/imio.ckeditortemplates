@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.4 (unreleased)
+0.1.4 (2014-06-19)
 ------------------
 
 - Update ckeditor styles.
