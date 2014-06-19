@@ -16,6 +16,12 @@ def setupTemplates(context):
     types = api.portal.get_tool(name="portal_types")
     types.getTypeInfo('cktemplatefolder').filter_content_types = False
     cktfolder = getattr(site, FOLDER)
+    try:
+        api.content.transition(obj=cktfolder,
+                               transition='published_and_hidden')
+    except api.exc.InvalidParameterError:
+        if api.content.get_state(obj=cktfolder) == 'private':
+            api.content.transition(obj=cktfolder, transition='publish')
     if not cktfolder.get(IMAGES_FOLDER):
         folder_images = api.content.create(
             type='Folder',
