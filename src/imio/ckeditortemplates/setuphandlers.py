@@ -45,6 +45,25 @@ def setupTemplates(context):
                                           container=cktfolder)
             api.content.transition(obj=template, transition='enable')
 
+    """ Allow figcaption as valid tag in portal_transforms safe_html"""
+
+    from Products.PortalTransforms.Transform import make_config_persistent
+
+    pt = api.portal.get_tool(name='portal_transforms')
+    tid = 'safe_html'
+    if tid not in pt.objectIds():
+        return
+    trans = pt[tid]
+    tconfig = trans._config
+
+    validtags = tconfig['valid_tags']
+    validtags.update({'figcaption': 1})
+
+    make_config_persistent(tconfig)
+    trans._p_changed = True
+    trans.reload()
+
+
 
 def add_images(folder_images):
     images = [

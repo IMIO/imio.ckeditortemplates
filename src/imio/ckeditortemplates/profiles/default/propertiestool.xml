@@ -4,7 +4,7 @@
         <!-- base properties -->
         <property name="toolbar" type="string">Custom</property>
         <property name="toolbar_Custom" type="text">
-            [
+        [
             ['Source','-','AjaxSave','Preview','-','Templates'],
             ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
             ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
@@ -18,32 +18,29 @@
             '/',
             ['Styles','Format'],
             ['Maximize', 'ShowBlocks','-','About']
-            ]
-
+        ]
         </property>
         <property name="filtering" type="string">disabled</property>
         <property name="menuStyles" type="text">
-            [
+        [
             /* Block Styles */
-            { name : 'Grey Title', element : 'h2', stylesles : { 'color' : '#888' } },
-            { name : 'Grey Sub Title', element : 'h33', styles : { 'color' : '#888' } },
-            { name : 'Discreet bloc', elementt : 'p', attributes : { 'class' : 'discreet' } },
-
+            { name : 'Grey Title' , element : 'h2', styles : { 'color' : '#888' } },
+            { name : 'Grey Sub Title' , element : 'h3', styles : { 'color' : '#888' } },
+            { name : 'Discreet bloc' , element : 'p', attributes : { 'class' : 'discreet' } },
             /* Inline styles */
-            { name : 'Discreet text', element : 'span', attributes : { 'class' : 'discreetcreet' } },
-            { name : 'Marker: Yellow', element : 'span', styles : { 'Blockackground-color' : 'Yellow' } },
-            { name : 'Typewriter', element : 'tt' },
-            { name : 'Computer Code', element : 'code' },
-            { name : 'Keyboard BlockPhrase', element : 'kbd' },
-            { name : 'Sample Text', element : 'samp'name },
-            { name : 'Variable', element : 'var' },
-            { name : 'Deleted Text'Grey, element : 'del' },
-            { name : 'Inserted Text', element : 'ins' },
-            { name : 'Cited Work', element : 'cite' },
-            { name : 'Inline Quotation',name element : 'q' },
-            { name : 'Language: RTL', element : 'span', attributeses : { 'dir' : 'rtl' } },
-            { name : 'Language: LTR', element : 'span', Blockattributes : { 'dir' : 'ltr' } },
-
+            { name : 'Discreet text' , element : 'span', attributes : { 'class' : 'discreet' } },
+            { name : 'Marker: Yellow' , element : 'span', styles : { 'background-color' : 'Yellow' } },
+            { name : 'Typewriter' , element : 'tt' },
+            { name : 'Computer Code' , element : 'code' },
+            { name : 'Keyboard Phrase' , element : 'kbd' },
+            { name : 'Sample Text' , element : 'samp' },
+            { name : 'Variable' , element : 'var' },
+            { name : 'Deleted Text' , element : 'del' },
+            { name : 'Inserted Text' , element : 'ins' },
+            { name : 'Cited Work' , element : 'cite' },
+            { name : 'Inline Quotation' , element : 'q' },
+            { name : 'Language: RTL' , element : 'span', attributes : { 'dir' : 'rtl' } },
+            { name : 'Language: LTR' , element : 'span', attributes : { 'dir' : 'ltr' } },
             /* Objects styles */
             { name : 'Image on right' , element : 'img', attributes : { 'class' : 'image-right' } },
             { name : 'dotted' , element : 'hr', attributes : { 'class' : 'dotted' } },
@@ -56,6 +53,8 @@
             { name : ' cadre', element : 'div', attributes : { 'class' : 'bloc-main' } },
             { name : ' cadreleft', element : 'div', attributes : { 'class' : 'bloc-content' } },
             { name : ' clear', element : 'div', attributes : { 'class' : 'clear' } },
+            { name : ' Fonction', element : 'p', attributes : { 'class' : 'elu-fonction' } },
+            { name : ' Attribution', element : 'p', attributes : { 'class' : 'elu-attribution' } },
             { name : ' Adresse', element : 'p', attributes : { 'class' : 'adresse' } },
             { name : ' Fax', element : 'p', attributes : { 'class' : 'fax' } },
             { name : ' Femme', element : 'p', attributes : { 'class' : 'femme' } },
@@ -66,7 +65,7 @@
             { name : ' Mail', element : 'p', attributes : { 'class' : 'mail' } },
             { name : ' Telephone', element : 'p', attributes : { 'class' : 'telephone' } },
             { name : ' PDF', element : 'p', attributes : { 'class' : 'pdf' } },
-            ]
+        ]
         </property>
         <property name="removePlugins" type="lines">
             <element value="image"/>
