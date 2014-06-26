@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.5 (unreleased)
+0.1.5 (2014-06-26)
 ------------------
 
 - Use image2 plugins from ckeditor.
