@@ -4,7 +4,7 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use image2 plugins from ckeditor.
 
 
 0.1.4 (2014-06-19)
