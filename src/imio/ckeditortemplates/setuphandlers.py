@@ -33,14 +33,21 @@ def setupTemplates(context):
 
     types.getTypeInfo('cktemplatefolder').filter_content_types = True
 
-    templates = {'Pésentation service': presentationservice(),
-                 'Présentation élu': presentationelu()}
+    templates = [
+        {'id': 'presentation-elu',
+         'title': u'Pésentation service',
+         'text': presentationservice()},
+        {'id': 'presentation-service',
+         'title': u'Présentation élu',
+         'text': presentationelu()}
+    ]
 
-    for key in templates.keys():
-        if not cktfolder.get(key):
-            rtv = RichTextValue(templates[key])
+    for template in templates:
+        if not cktfolder.get(template['id']):
+            rtv = RichTextValue(template['text'])
             template = api.content.create(type="cktemplate",
-                                          title=key,
+                                          id=template['id'],
+                                          title=template['title'],
                                           content=rtv,
                                           container=cktfolder)
             api.content.transition(obj=template, transition='enable')
