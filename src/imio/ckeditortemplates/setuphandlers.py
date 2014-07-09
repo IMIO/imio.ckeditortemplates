@@ -35,10 +35,10 @@ def setupTemplates(context):
 
     templates = [
         {'id': 'presentation-elu',
-         'title': u'Pésentation service',
+         'title': u'Présentation élu',
          'text': presentationservice()},
         {'id': 'presentation-service',
-         'title': u'Présentation élu',
+         'title': u'Présentation service',
          'text': presentationelu()}
     ]
 
