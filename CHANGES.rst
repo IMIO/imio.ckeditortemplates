@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.8 (unreleased)
+0.1.8 (2014-08-11)
 ------------------
 
 - Add CreateDiv and Iframe into ckeditor toolbar.
