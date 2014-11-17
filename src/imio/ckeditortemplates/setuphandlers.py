@@ -36,10 +36,10 @@ def setupTemplates(context):
     templates = [
         {'id': 'presentation-elu',
          'title': u'Présentation élu',
-         'text': presentationservice()},
+         'text': presentationelu()},
         {'id': 'presentation-service',
          'title': u'Présentation service',
-         'text': presentationelu()}
+         'text': presentationservice()}
     ]
 
     for template in templates:
@@ -82,7 +82,7 @@ def add_images(folder_images):
         {'name': 'homme.png', 'uuid': 'a0adc656cdc94b18821fb84fc9dfhom'},
         {'name': 'horloge.png', 'uuid': '13a4a96fc0254fbfbaf7d7b20cd5hor'},
         {'name': 'lien.png', 'uuid': '6b334453028e4fb385bd9c4ee46clie'},
-        {'name': 'pdf.png', 'uuid': '1a3e3bfbab544f009faa7d527a0pdf'},
+        {'name': 'pdf-1.png', 'uuid': '1a3e3bfbab544f009faa7d527a0pdf'},
         {'name': 'photo-exemple.jpg', 'uuid': 'f52fb2d7b47648b288a7ff897b5ppho'},
         {'name': 'telephone.png', 'uuid': '3592b8b7a4f44b8c9d9c04595a0tel'},
     ]
@@ -116,7 +116,7 @@ def presentationservice():
 <p class="lien">&nbsp;</p>
 </div>
 <div class="horaire">
-<p class="horloge">&nbsp;</p>
+<p>&nbsp;</p>
 </div>
 <div class="clear">&nbsp;</div>
 </div>

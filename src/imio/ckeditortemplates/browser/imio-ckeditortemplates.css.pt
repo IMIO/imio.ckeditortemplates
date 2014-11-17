@@ -7,7 +7,6 @@
 
 .bloc-main{
   background-color:#f2f2f2;
-  width:97%;
   padding:1%;
   margin-bottom:1%;
   border: 1px solid #D3D3D3;
@@ -46,14 +45,9 @@
 }
 
 
-.coordonnees{
+.coordonnees,.horaire{
   float:left;
-  width:48%;
-}
-
-.horaire{
-  float:left;
-  width:48%;
+  width:46%;
 }
 
 .clear{
@@ -74,8 +68,8 @@
   padding-left: 2.4em;
 }
 
-.horloge{
-background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/horloge.png") no-repeat ;
+.horloge,.horaire{
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/horloge.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
@@ -99,7 +93,7 @@ background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplat
 }
 
 .telephone{
-  background:url("resolveuid/3592b8b7a4f44b8c9d9c04595a0tel/image_preview") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/telephone.png") no-repeat ;
   margin:0.1em;
   padding: 0 0 0.8em 2.4em;
 }
@@ -123,7 +117,7 @@ background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplat
 }
 
 .pdf{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/fichier.png") no-repeat ;
+  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/pdf-1.png") no-repeat ;
   height: 49px;
   margin: 0.1em;
   padding: 0 0 1.4em 4.4em;
