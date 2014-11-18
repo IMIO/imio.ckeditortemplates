@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.9 (unreleased)
+0.1.9 (2014-11-18)
 ------------------
 
 - change css ,modified images and change template.
