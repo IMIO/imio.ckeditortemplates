@@ -85,6 +85,7 @@ def add_images(folder_images):
         {'name': 'pdf-1.png', 'uuid': '1a3e3bfbab544f009faa7d527a0pdf'},
         {'name': 'photo-exemple.jpg', 'uuid': 'f52fb2d7b47648b288a7ff897b5ppho'},
         {'name': 'telephone.png', 'uuid': '3592b8b7a4f44b8c9d9c04595a0tel'},
+        {'name': 'localisation.png', 'uuid': '4b73aff9d5dc47df8e84998c8aec8357'},
     ]
     import os
     from imio.ckeditortemplates import interfaces
@@ -131,25 +132,14 @@ def presentationservice():
 
 def presentationelu():
     text = '''
-<div class="bloc-main"><img alt="" class="image-left-border" src="++resource++imio.ckeditortemplates/photo-exemple.jpg" style="height:125px; width:125px" />
-<div class="bloc-content">
-
+<div class="bloc-main-2">
 <h2>Nom</h2>
-<p>Fonction</p>
+<p class="elu-fonction">Fonction</p>
+<img alt="" class="image-left" height="125" src="++resource++imio.ckeditortemplates/photo-exemple.jpg" style="width: 125px; height: 125px;" width="125" />
 <p class="adresse">&nbsp;</p>
 <p class="telephone">&nbsp;</p>
 <p class="mail">&nbsp;</p>
-</div>
-
-<div class="bloc-content">
-<h3>Attributions</h3>
-<ul>
-    <li>&nbsp;</li>
-    <li>&nbsp;</li>
-    <li>&nbsp;</li>
-</ul>
-</div>
-<div class="clear">&nbsp;</div>
+<p class="elu-attribution">Attributions</p>
 </div>
 '''
     return text

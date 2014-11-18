@@ -1,131 +1,158 @@
 <tal:block tal:define='portal_url context/portal_url'>
 .bloc-content{
-  float:left;
-  width:30%;
-  padding-right: 4em;
+	float:left;
+	width:30%;
+	padding-right: 4em;
 }
 
 .bloc-main{
-  background-color:#f2f2f2;
-  padding:1%;
-  margin-bottom:1%;
-  border: 1px solid #D3D3D3;
+	background-color:#f2f2f2;
+	padding:1%;
+	margin-bottom:1%;
+	border: 1px solid #D3D3D3;
 }
 
 .bloc-main h2,.bloc-main h3{
-  font-weight: normal !important;
-  margin: 0;
-  padding-top: 0.4em;
-  line-height: 100%;
-
+	font-weight: normal !important;
+	margin: 0;
+	padding-top: 0.4em;
+	line-height: 100%;
 }
 
 .bloc-main h2{
-  padding-bottom:0.4em;
+	padding-bottom:0.4em;
 }
 
 .fonction{
-  font-size: 110%;
-  font-variant: small-caps;
-}
-.image-left-border {
-  border: 1px solid #F2F2F2;
-  border-radius:5px;
-  clear: both;
-  float: left;
-  margin: 0.5em 1em 0.5em 0;
+	font-size: 110%;
+	font-variant: small-caps;
 }
 
-.image-right-border {
-  border: 1px solid #F2F2F2;
-  border-radius:5px;
-  clear: both;
-  float: right;
-  margin: 0.5em 1em 0.5em 0;
+.coordonnees{
+	float:left;
+	width:46%;
 }
 
-
-.coordonnees,.horaire{
-  float:left;
-  width:46%;
+.horaire {
+    float: left;
+    max-width: 40%;
+    min-width: 10%;
 }
 
 .clear{
-  clear:both;
-  height:0px;
+	clear:both;
+	height:0px;
 }
 
 .infos-service {
-  background-color: #F2F2F2;
-  border: 1px solid #D3D3D3;
-  margin-bottom: 1%;
-  padding: 1%;
-  width: 99%;
+	background-color: #F2F2F2;
+	border: 1px solid #D3D3D3;
+	margin-bottom: 1em;
+	padding: 1%;
+	word-wrap: break-word;/*permet au p de ne pas sortir de la div*/
 }
 
 .info{
-  margin:0.1em;
-  padding-left: 2.4em;
+	margin:0.1em;
+	padding-left: 2.4em;
+}
+
+.bloc-main-2{
+    margin-bottom:1em;
+    border:1px solid #dcdcdc;
+    padding:2%;
+    word-wrap: break-word;
+}
+
+#content .bloc-main-2 p{
+    margin-bottom:0em ;
+}
+
+.bloc-main-2 h2{
+    color:#444;
+}
+
+.bloc-main-2 .image-left{
+    margin-top:0 ;
+}
+
+#content .bloc-main-2 .adresse,#content .bloc-main-2 .telephone,#content .bloc-main-2 .mail,
+#content .bloc-main-2 .fax,#content .bloc-main-2 .femme,#content .bloc-main-2 .gsm,
+#content .bloc-main-2 .homme,#content .bloc-main-2 .horloge,#content .bloc-main-2 .lien,
+#content .bloc-main-2 .pdf,#content .bloc-main-2 .lien,#content .bloc-main-2 .localisation{
+    margin-left: 143px;
+}
+
+.elu-attribution{
+    background:#eceaeb;
+    clear:both;
+    padding:1.5%;
+}
+
+.elu-fonction{
+    color: #9d9d9d;
+    font-weight: bold;
+    padding-bottom: 0.5%;
+    text-transform: uppercase;
+}
+
+#content .horloge,#content .lien,#content .horaire,#content .adresse,#content .homme,
+#content .femme,#content .telephone,#content .fax,#content .mail,#content .pdf,#content .gsm,#content .localisation{
+	margin:0.1em 0.1em 0 0;
 }
 
 .horloge,.horaire{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/horloge.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/horloge.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .adresse{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/adresse.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/adresse.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .homme{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/homme.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/homme.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .femme{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/femme.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/femme.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .telephone{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/telephone.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/telephone.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .fax{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/fax.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/fax.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .mail{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/courriel.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/courriel.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .lien{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/lien.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/lien.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .pdf{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/pdf-1.png") no-repeat ;
-  height: 49px;
-  margin: 0.1em;
-  padding: 0 0 1.4em 4.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/pdf-1.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 
 .gsm{
-  background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/gsm.png") no-repeat ;
-  margin:0.1em;
-  padding: 0 0 0.8em 2.4em;
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/gsm.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
+}
+
+.localisation{
+	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/localisation.png") no-repeat ;
+	padding: 0.3em 0 0.3em 2.4em;
 }
 </tal:block>

@@ -62,6 +62,7 @@
             { name : ' Homme', element : 'p', attributes : { 'class' : 'homme' } },
             { name : ' Horloge', element : 'p', attributes : { 'class' : 'horloge' } },
             { name : ' Lien', element : 'p', attributes : { 'class' : 'lien' } },
+            { name : ' Localisation', element : 'p', attributes : { 'class' : 'localisation' } },
             { name : ' Mail', element : 'p', attributes : { 'class' : 'mail' } },
             { name : ' Telephone', element : 'p', attributes : { 'class' : 'telephone' } },
             { name : ' PDF', element : 'p', attributes : { 'class' : 'pdf' } },
