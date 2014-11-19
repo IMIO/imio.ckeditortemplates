@@ -1,32 +1,27 @@
-.PHONY = init install clean test venv
+#!/usr/bin/make
+all: run
 
-bin/buildout=bin/buildout -Nt 4
-bin/instance=bin/instance fg
+bootstrap.py:
+	wget http://downloads.buildout.org/2/bootstrap.py
 
-venv: 
-	@if test -f bin/python; then echo "Virtualenv already created"; \
-		else virtualenv-2.7 --no-setuptools . ; fi
+bin/python:
+	virtualenv-2.7 --no-site-packages .
 
-bootstrap: 
-	@if test -f 'bootstrap.py'; then echo "bootstrap.py already downloaded"; \
-		else wget http://downloads.buildout.org/2/bootstrap.py; fi
-	@if test -f 'bin/buildout'; then echo "bin/buildout already generated"; \
-		else  bin/python bootstrap.py; fi
+bin/buildout: bin/python bootstrap.py
+	./bin/python bootstrap.py
 
-buildoutcfg:
-	@if test -f 'buildout.cfg'; \
-		then echo "There is a buildout.cfg"; \
-		else ln -s dev.cfg buildout.cfg; fi
+.PHONY: buildout
+buildout: bin/buildout
+	bin/buildout -t 7
 
-start:
-	$(bin/instance)
-
-install: venv buildoutcfg bootstrap
-	$(bin/buildout)
-
-test: install
+.PHONY: test
+test: buildout
 	bin/test
 
-clean:
-	rm -rf include bin parts lib develop-eggs
-	rm -f .buildout.cfg .installed.cfg .mr.developer.cfg bootstrap.py
+.PHONY: run
+run: buildout
+	bin/instance1 fg
+
+.PHONY: cleanall
+cleanall:
+	rm -fr develop-eggs downloads eggs parts .installed.cfg lib include bin .mr.developer.cfg
