@@ -4,7 +4,7 @@ Changelog
 0.1.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add upgrade step for re setting ckeditor settings.
 
 
 0.1.9 (2014-11-18)
