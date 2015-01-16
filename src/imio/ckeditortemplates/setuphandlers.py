@@ -71,7 +71,6 @@ def setupTemplates(context):
     trans.reload()
 
 
-
 def add_images(folder_images):
     images = [
         {'name': 'adresse.png', 'uuid': '62c875a43fca465aa7960312ec74cadr'},
