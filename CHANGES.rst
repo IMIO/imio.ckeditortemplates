@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.1.10 (unreleased)
--------------------
+0.2.0 (2015-01-16)
+------------------
 
 - Add upgrade step for re setting ckeditor settings.
 
