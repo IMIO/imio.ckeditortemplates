@@ -4,7 +4,7 @@ Changelog
 0.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Check if exists transtion on publish
 
 
 0.2.0 (2015-01-16)

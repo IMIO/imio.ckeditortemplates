@@ -50,7 +50,10 @@ def setupTemplates(context):
                                           title=template['title'],
                                           content=rtv,
                                           container=cktfolder)
-            api.content.transition(obj=template, transition='enable')
+            try:
+                api.content.transition(obj=template, transition='enable')
+            except api.exc.InvalidParameterError:
+                logger.info("No enable workflow")
 
     """ Allow figcaption as valid tag in portal_transforms safe_html"""
 
