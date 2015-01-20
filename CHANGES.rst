@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.1 (unreleased)
+0.2.1 (2015-01-20)
 ------------------
 
 - Check if exists transtion on publish
