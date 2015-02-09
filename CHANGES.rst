@@ -1,10 +1,16 @@
 Changelog
 =========
 
-0.2.1 (unreleased)
+0.2.2 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+0.2.1 (2015-01-20)
+------------------
+
+- Check if exists transtion on publish
 
 
 0.2.0 (2015-01-16)
