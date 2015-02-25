@@ -17,7 +17,8 @@ def setupTemplates(context):
     types = api.portal.get_tool(name="portal_types")
     types.getTypeInfo('cktemplatefolder').filter_content_types = False
     cktfolder = getattr(site, FOLDER)
-    import ipdb; ipdb.set_trace()
+    if not cktfolder.language:
+        cktfolder.setLanguage('fr')
     try:
         api.content.transition(obj=cktfolder,
                                transition='publish_and_hide')
