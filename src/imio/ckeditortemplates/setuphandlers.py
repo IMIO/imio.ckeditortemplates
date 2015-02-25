@@ -17,6 +17,7 @@ def setupTemplates(context):
     types = api.portal.get_tool(name="portal_types")
     types.getTypeInfo('cktemplatefolder').filter_content_types = False
     cktfolder = getattr(site, FOLDER)
+    import ipdb; ipdb.set_trace()
     try:
         api.content.transition(obj=cktfolder,
                                transition='publish_and_hide')
@@ -27,7 +28,8 @@ def setupTemplates(context):
         folder_images = api.content.create(
             type='Folder',
             title=IMAGES_FOLDER,
-            container=cktfolder)
+            container=cktfolder,
+            language='fr')
 
         add_images(folder_images)
 
@@ -49,7 +51,8 @@ def setupTemplates(context):
                                           id=template['id'],
                                           title=template['title'],
                                           content=rtv,
-                                          container=cktfolder)
+                                          container=cktfolder,
+                                          language='fr')
             try:
                 api.content.transition(obj=template, transition='enable')
             except api.exc.InvalidParameterError:
@@ -99,7 +102,8 @@ def add_images(folder_images):
             img = api.content.create(type="Image",
                                      title=image['name'],
                                      image=img_file,
-                                     container=folder_images)
+                                     container=folder_images,
+                                     language='fr')
             img._setUID(image['uuid'])
             if api.content.get_uuid(obj=img) != image['uuid']:
                 # its a dexterity content
