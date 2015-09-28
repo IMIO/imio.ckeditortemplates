@@ -142,7 +142,7 @@ def presentationelu():
 <div class="bloc-main-2">
 <h2>Nom</h2>
 <p class="elu-fonction">Fonction</p>
-<img alt="" class="image-left" height="125" src="++resource++imio.ckeditortemplates/photo-exemple.jpg" style="width: 125px; height: 125px;" width="125" />
+<img alt="" class="image-left" height="125" src="++resource++imio.ckeditortemplates/photo-exemple.jpg" width="125" />
 <p class="adresse">&nbsp;</p>
 <p class="telephone">&nbsp;</p>
 <p class="mail">&nbsp;</p>
