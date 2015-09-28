@@ -4,7 +4,7 @@ Changelog
 0.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Suppression attribut style setuphandlers.
 
 
 0.2.1 (2015-01-20)
