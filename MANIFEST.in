@@ -1,4 +1,10 @@
-include *
+include setup.py
+include *.rst
+exclude *.cfg
+exclude bootstrap.py
+exclude Makefile
 
-recursive-include docs *
 graft src
+recursive-include docs *
+
+global-exclude *.pyc
