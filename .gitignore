@@ -9,5 +9,5 @@ parts
 var
 *.pyc
 *.egg-info
-src/collective.ckeditortemplates/
+devel/
 .coverage
