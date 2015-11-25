@@ -4,7 +4,8 @@ Changelog
 0.2.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Now able to be installed with dexterity (plone.app.contenttypes)
+  [bsuttor]
 
 
 0.2.2 (2015-09-28)
