@@ -4,7 +4,7 @@ from plone import api
 from plone.app.textfield.value import RichTextValue
 from plone.uuid.interfaces import ATTRIBUTE_NAME
 import logging
-logger = logging.getLogger("imio.ckeditortemplates setup")
+logger = logging.getLogger('imio.ckeditortemplates setup')
 
 IMAGES_FOLDER = 'images'
 
@@ -14,7 +14,7 @@ def setupTemplates(context):
         return
 
     site = context.getSite()
-    types = api.portal.get_tool(name="portal_types")
+    types = api.portal.get_tool(name='portal_types')
     types.getTypeInfo('cktemplatefolder').filter_content_types = False
     cktfolder = getattr(site, FOLDER)
     if not cktfolder.language:
@@ -100,7 +100,7 @@ def add_images(folder_images):
         if not folder_images.get(image):
             img_path = os.sep.join([package_path, "browser", "static", image['name']])
             img_file = open(img_path, 'r')
-            if folder_images.portal_type == 'Image' and 'Dexterity' not in folder_images.meta_type:
+            if folder_images.portal_type == 'Folder' and 'Dexterity' not in folder_images.meta_type:
                 img = api.content.create(type='Image',
                                          title=image['name'],
                                          image=img_file,
