@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.3 (unreleased)
+0.2.3 (2015-11-27)
 ------------------
 
 - Now able to be installed with dexterity (plone.app.contenttypes)
