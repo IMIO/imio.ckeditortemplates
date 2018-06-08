@@ -100,59 +100,128 @@
 #content .femme,#content .telephone,#content .fax,#content .mail,#content .pdf,#content .gsm,#content .localisation{
 	margin:0.1em 0.1em 0 0;
 }
-
+.horloge::before,
+.horaire::before{
+    content: "\E806";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .horloge,.horaire{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/horloge.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relative;
 }
 
+.adresse::before {
+    content: "\E811";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .adresse{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/adresse.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relarive;
 }
-
+.homme::before {
+    content: "\f062";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .homme{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/homme.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relarive;
 }
-
+.femme::before {
+    content: "\f063";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .femme{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/femme.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relarive;
 }
-
+.telephone::before {
+    content: "\E804";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .telephone{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/telephone.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relarive;
 }
-
+.fax::before {
+    content: "\E833";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .fax{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/fax.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relarive;
 }
-
+.mail::before {
+    content: "\E819";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .mail{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/courriel.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relarive;
 }
-
+.lien::before {
+    content: "\E843";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .lien{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/lien.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relative;
 }
-
+.pdf::before {
+    content: "\e86f";
+    color: #DA251C;
+    font-family: "fontello";
+    position: absolute;
+    left: -0.3em;
+    font-size: 1vw;
+}
 .pdf{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/pdf-1.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relative;
 }
-
+.gsm::before {
+    content: "\E84D";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .gsm{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/gsm.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relative;
 }
-
+.localisation::before {
+    content: "\E835";
+    font-family: "fontello";
+    position: absolute;
+    left: 0;
+    font-size: 1vw;
+}
 .localisation{
-	background:url("<tal:block tal:content="portal_url"></tal:block>/ckeditortemplates/images/localisation.png") no-repeat ;
-	padding: 0.3em 0 0.3em 2.4em;
+	padding: 0.3em 0 0.3em 1.5em;
+  position: relative;
 }
 </tal:block>
