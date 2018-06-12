@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.2.4 (unreleased)
+0.2.4 (2018-06-12)
 ------------------
 
-- Nothing changed yet.
-
+- Change css for icon.
+  [mgennart]
 
 0.2.3 (2015-11-27)
 ------------------
