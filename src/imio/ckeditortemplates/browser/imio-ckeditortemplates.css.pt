@@ -122,7 +122,7 @@
 }
 .adresse{
 	padding: 0.3em 0 0.3em 1.5em;
-  position: relarive;
+  position: relative;
 }
 .homme::before {
     content: "\f062";
@@ -133,7 +133,7 @@
 }
 .homme{
 	padding: 0.3em 0 0.3em 1.5em;
-  position: relarive;
+  position: relative;
 }
 .femme::before {
     content: "\f063";
@@ -144,7 +144,7 @@
 }
 .femme{
 	padding: 0.3em 0 0.3em 1.5em;
-  position: relarive;
+  position: relative;
 }
 .telephone::before {
     content: "\E804";
@@ -155,7 +155,7 @@
 }
 .telephone{
 	padding: 0.3em 0 0.3em 1.5em;
-  position: relarive;
+  position: relative;
 }
 .fax::before {
     content: "\E833";
@@ -166,7 +166,7 @@
 }
 .fax{
 	padding: 0.3em 0 0.3em 1.5em;
-  position: relarive;
+  position: relative;
 }
 .mail::before {
     content: "\E819";
@@ -177,7 +177,7 @@
 }
 .mail{
 	padding: 0.3em 0 0.3em 1.5em;
-  position: relarive;
+  position: relative;
 }
 .lien::before {
     content: "\E843";
