@@ -14,7 +14,7 @@ long_description = \
 
 setup(
     name='imio.ckeditortemplates',
-    version='0.2.5.dev0',
+    version='0.2.5',
     description="Initialisation of CKEditor templates for IMIO",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
