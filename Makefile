@@ -2,7 +2,7 @@
 all: run
 
 bin/pip:
-	if [ -f virtualenv-2.7 ] ; then virtualenv-2.7 .;else virtualenv -p python2.7 .;fi
+	if [ -f /usr/bin/virtualenv-2.7 ] ; then virtualenv-2.7 .;else virtualenv -p python2.7 .;fi
 
 bin/buildout: bin/pip
 	./bin/pip install -r requirements.txt
