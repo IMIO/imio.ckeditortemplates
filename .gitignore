@@ -12,3 +12,5 @@ var
 devel/
 .coverage
 share/
+local/
+pip-selfcheck.json
