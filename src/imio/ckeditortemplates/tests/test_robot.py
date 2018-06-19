@@ -8,7 +8,8 @@ from imio.ckeditortemplates.testing import IMIO_CKEDITORTEMPLATES_ROBOT_TESTING
 
 def test_suite():
     suite = unittest.TestSuite()
-    robots_file = ['example.robot']
+    # robots_file = ['example.robot']
+    robots_file = []
 
     for robot_file in robots_file:
         rts = robotsuite.RobotTestSuite(robot_file)
