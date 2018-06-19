@@ -1,14 +1,11 @@
 #!/usr/bin/make
 all: run
 
-bootstrap.py:
-	wget http://downloads.buildout.org/2/bootstrap.py
+bin/pip:
+	virtualenv -p python2.7 .
 
-bin/python:
-	virtualenv-2.7 --no-site-packages .
-
-bin/buildout: bin/python bootstrap.py
-	./bin/python bootstrap.py
+bin/buildout: bin/pip
+	./bin/pip install -r requirements.txt
 
 .PHONY: buildout
 buildout: bin/buildout
