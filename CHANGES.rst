@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.2.6 (unreleased)
+0.2.6 (2018-07-02)
 ------------------
 
-- Nothing changed yet.
-
+- Change font-size for icons.
+  [mgennart]
 
 0.2.5 (2018-06-13)
 ------------------

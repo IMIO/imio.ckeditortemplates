@@ -106,7 +106,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 110%;
 }
 .horloge,.horaire{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -117,8 +117,8 @@
     content: "\E811";
     font-family: "fontello";
     position: absolute;
-    left: 0;
-    font-size: 1vw;
+    left: -0.1em;
+    font-size: 110%;
 }
 .adresse{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -129,7 +129,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 100%;
 }
 .homme{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -140,7 +140,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 100%;
 }
 .femme{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -151,7 +151,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 110%;
 }
 .telephone{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -162,7 +162,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 100%;
 }
 .fax{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -173,7 +173,8 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    top: 0.5em;
+    font-size: 100%;
 }
 .mail{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -184,7 +185,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 110%;
 }
 .lien{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -196,7 +197,7 @@
     font-family: "fontello";
     position: absolute;
     left: -0.3em;
-    font-size: 1vw;
+    font-size: 110%;
 }
 .pdf{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -207,7 +208,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 110%;
 }
 .gsm{
 	padding: 0.3em 0 0.3em 1.5em;
@@ -218,7 +219,7 @@
     font-family: "fontello";
     position: absolute;
     left: 0;
-    font-size: 1vw;
+    font-size: 110%;
 }
 .localisation{
 	padding: 0.3em 0 0.3em 1.5em;
