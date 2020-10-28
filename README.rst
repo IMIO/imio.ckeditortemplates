@@ -1,6 +1,6 @@
-====================
+======================
 imio.ckeditortemplates
-====================
+======================
 
 Initialisation of CKEditor templates for IMIO
 
